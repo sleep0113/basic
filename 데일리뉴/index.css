@@ -1,5 +1,7 @@
-body{display:block;}
+div{display:block;}
 body,h1,h2,h3{margin:0;}
+
+/* body{font-family:} */
 
 
 img{vertical-align:top;}
@@ -15,7 +17,7 @@ header{
     padding-bottom:40px;
     
 }
-.headertop > nav{
+.headertop > nav{  
     text-align:right;
     margin:45px 50px 0 50px;
     
@@ -25,42 +27,72 @@ header{
 }
 .headerlist{
     line-height:100px;
-    /* border:1px solid #000; */
     text-align:center;
 }
-.headerlist > h1{}
-.headerlist > nav{   
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; */
+.headerlist > h1{font-size:40px;}
+.headerlist > nav{
+    position:relative;
+    top:0; left:0;   
+    height:55px;
+    background:#fff;
     display:flex;
     justify-content:space-around;
 }
-.headerlist > nav > a{}
+.headerlist > nav::after{
+    height:55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
-main{}
+
+.headerlist > nav > a:nth-child(1){color:red;}
+.headerlist > nav > a:nth-child(2){color:blue;}
+
+/* .headerlist > nav > input{
+    border:0;
+    vertical-align: middle;
+    border-bottom:1px solid #000;
+    
+} */
+
+/* main{} */
 .main-p{
-    width:100%; margin:0 auto;
+    width:80%; margin:0 auto;
 }
 .main-p > a > img{
     width:100%;
-    height:500px;
-}
-.main-title{
+    height:600px;
     text-align:center;
-    padding:150px 0;
-}
-.p-01{
-    display:flex;
-    justify-content:space-around;
 }
 
-div > figure > img{width:30%;}
-.p-01 > figure{}
-.p-01 > figure > img{}
-.p-02 > figure{}
-.p-02 > figure > img{}
-.p-03 > figure{}
-.p-03 > figure > img{}
+.main-title{
+    text-align:center;
+    padding:150px 0;}
+
+
+
+.main-title > h2{font-size:30px;}
+
+.sub-p img{width:100%;}
+
+.sub-p{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+
+footer{
+    text-align:center;
+    padding:20px 0;
+    background:rgb(219, 144, 203)
+}
+
+.sub-p > figure{
+    /* border:1px solid#000; */
+    width:20%; height:550px;
+}
+
+
